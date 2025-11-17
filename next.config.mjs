@@ -113,8 +113,8 @@ if (mode !== "export") {
     ignoreDuringBuilds: true,
   },
   typescript: {
-    ignoreBuildErrors: true,
-  },
+    ignoreBuildErrors: true
+  } // <--- 看！我把第 117 行的那个逗号删掉了！
   // END OF OUR FIX
 
 }; // <--- 这是 nextConfig 对象的结尾
