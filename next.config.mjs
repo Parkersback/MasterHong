@@ -105,9 +105,10 @@ if (mode !== "export") {
     return {
       beforeFiles: ret,
     };
-  }, // <--- 这是第108行，我帮您加了一个逗号
+  }, // <--- 这是 async rewrites() 函数的结尾
 
   // START OF OUR FIX - Skip checks
+  // 我们在这里跳过 ESLint 和 TypeScript 检查
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -116,6 +117,6 @@ if (mode !== "export") {
   },
   // END OF OUR FIX
 
-} // <--- 这是原图第109行的 '}'
+}; // <--- 这是 nextConfig 对象的结尾
 
-export default nextConfig; // <--- 这是原图第111行的 'export'
+export default nextConfig;
